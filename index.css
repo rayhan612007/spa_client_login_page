@@ -6,7 +6,7 @@
 }
 body{
     background-color: #1a1a1a;
-    padding:5% 10%;
+    padding:5% 25%;
     background-image: url(../images/spa_background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,4 +71,27 @@ button:hover{
     transform: scale(1.08);
     box-shadow: 0 8px 20px rgba(247, 6, 215, 0.5);
 }
+@media (max-width: 768px) {
+    /* CSS for screens 768px wide or smaller */
+    body{
+    background-color: #1a1a1a;
+    padding:1% 1%;
+    background-image: url(../images/spa_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+}
+@media (min-width:768px && max-width: 992px) {
+    /* CSS for screens 768px wide or smaller */
+    body{
+    background-color: #1a1a1a;
+    padding:10% 10%;
+    background-image: url(../images/spa_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+}
+
 
