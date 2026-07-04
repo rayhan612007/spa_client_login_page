@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="display:flex; flex-direction: column; gap:15px;">
+    <header>
+        <h1 class="head">Spa Client Intake Form</h1>
+    </header>
+    <nav class="flex">
+        <div class="border-top ">
+            <p class="border-gap selected"></p>
+            <a href="#homepage" class="nav_link selected">Client Details</a>
+        </div>
+        <div class="border-top">
+            <p class="border-gap"></p>
+            <a href="#Contactpage" class="nav_link">Emergency Contact Details</a>
+        </div>
+        <div class="flex-col">
+            <p class="border-gap"></p>
+            <a href="#ServicesPage" class="nav_link">Services & Checkout</a>
+        </div>
+    </nav>
+    <form action="submit.php" method="post" class="margin-top" style="display: flex; flex-direction: column; gap:15px;">
+        <p style="color:white; font-size: 16px;margin-bottom:7px; font-weight: bold;">Name</p>
+        <div>
+            <label for="firstname" >
+                <input type="text" id="firstname" name="firstname" placeholder="First Name">
+            </label>
+            
+            <label for="lastname" >
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+            </label>
+        </div>
+
+        <div>
+            <p style="color:white; font-size: 16px; margin-bottom:7px; font-weight: bold;">Phone</p>
+            <label for="phone" >
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </label>
+        </div>
+
+        <div>
+            <p style="color:white; font-size: 16px;margin-bottom:7px; font-weight: bold;">Email</p>
+            <label for="email" >
+                <input type="email" id="email" name="email" placeholder="Email Address">
+            </label>
+        </div>
+            <p style="color:white; font-size: 16px; font-weight: bold;">Address</p>
+            <label for="address" >
+                <input type="text" id="address" name="address" placeholder="Address">
+
+            </label>
+            <p style="color:white; font-size: 12px;margin-bottom:7px;">Street Address</p>
+        </div>
+        <div style="display: flex;flex-direction: column;">
+            <div>
+                <label for="street" >
+                    <input type="text" id="street" name="street" placeholder="Street Address">
+                </label>
+            
+                <p style="color:white; font-size: 12px;margin-bottom:17px;">Address Line 2</p>
+
+            </div>
+            <div>
+                <label for="city" >
+                    <input type="text" id="city" name="city" placeholder="City">
+                    
+                </label>
+                <!-- <p style="color:white; font-size: 12px;margin-bottom:7px;">City</p> -->
+                <label for="state" >
+                    <input type="text" id="state" name="state" placeholder="State/Region">
+                    
+                </label>
+                <!-- <p style="color:white; font-size: 12px;margin-bottom:7px;">City</p> -->
+            
+            </div>
+            <br>
+            <div>
+                <label for="Zipcode" >
+                    <input type="text" id="Zipcode" name="Zipcode" placeholder="Zip Code">
+                    
+                </label>
+                <!-- <p style="color:white; font-size: 12px;margin-bottom:7px;">City</p> -->
+                <label for="Country" >
+                    <input type="text" id="Country" name="Country" placeholder="Country">
+                    
+                </label>
+                <!-- <p style="color:white; font-size: 12px;margin-bottom:7px;">City</p> -->
+            
+            </div>
+            <div style="display:flex; justify-content: center;margin-top: 20px;">
+                <button>
+                    Next
+                </button>
+            </div>
+        </div>
+
+
+    </form>
+    <footer>
+        <p style="text-align:right;font-size:11px; color:white;">1/3</p>
+    </footer>
+</body>
+</html>
